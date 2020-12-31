@@ -1,0 +1,26 @@
+.container{
+    padding: 20px;
+}
+.add-btn{
+    margin: 10px;
+    width: 80px;
+    padding: 10px;
+    background: rgb(167, 240, 177);
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 40% 30% auto;
+    margin-bottom: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.15rem;
+    word-wrap: break-word;
+    padding-right: 10px;
+}
