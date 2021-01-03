@@ -3,12 +3,16 @@ import React, { Component } from 'react';
 import Header from "./Header";
 import './App.css'
 class App extends Component {
+  deleteHandler(message) {
+    alert(message);
+  }
   render() {
     let subscribers = [
       { id:1, name: "Shipra", phone: "2222222222" },
       { id:2, name: "Ayushi", phone: "99999999999" },
     ];
-
+    
+  
     return (
       <div >
         <Header name="Phone-Directory"  />
@@ -25,7 +29,7 @@ class App extends Component {
             return <div key={sub.id} className="grid-container">
               <span className="grid-item ">{sub.name}</span>
               <span className="grid-item ">{sub.phone}</span>
-              <button className=" del-btn" >Delete</button>
+              <button className=" del-btn" onClick={this.deleteHandler.bind(this,"Delete Clicked")}>Delete</button>
             </div>
           })
           }
