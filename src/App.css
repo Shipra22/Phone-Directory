@@ -1,5 +1,6 @@
 .container{
     padding: 20px;
+  
 }
 .add-btn{
     margin: 10px;
@@ -12,9 +13,19 @@
     cursor: pointer;
 
 }
+.del-btn{
+    margin: 10px;
+    width: 80px;
+    padding: 10px;
+    background: rgb(212, 53, 48);
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
 .grid-container{
     display: grid;
-    grid-template-columns: 40% 30% auto;
+    grid-template-columns: 20% 20% auto;
     margin-bottom: 10px;
 }
 
